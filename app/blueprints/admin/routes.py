@@ -5,14 +5,14 @@ from . import admin_bp
 def admin():
     return render_template('admin/index.html')
 
-@admin_bp.route('admin/productos')
+@admin_bp.route('/admin/productos')
 def productos():
     return render_template('admin/productos.html')
 
-@admin_bp.route('admin/clientes')
+@admin_bp.route('/admin/clientes')
 def clientes():
     return render_template('admin/clientes.html')
 
-@admin_bp.route('admin/pedidos')
+@admin_bp.route('/admin/pedidos')
 def pedidos():
     return render_template('admin/pedidos.html')

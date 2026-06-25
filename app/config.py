@@ -5,7 +5,6 @@ load_dotenv()
 
 class Config:
     SECRET_KEY = os.getenv('SECRET_KEY','dev-secret')
-
     #Configuracion de LA BD
     SQLALCHEMY_DATABASE_URI=(
         f"mysql+pymysql://{os.getenv('DB_USER')}:{os.getenv('DB_PASSWORD')}"

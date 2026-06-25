@@ -1,8 +1,8 @@
 from flask import Blueprint
-admin_cb =Blueprint(
+admin_bp =Blueprint(
     'admin',
     __name__,
-    templante_folder='../../templantes/admin'
+    template_folder='../../templates/admin'
 )
 
 from . import routes
