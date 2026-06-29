@@ -1,7 +1,8 @@
 from flask import Blueprint
-public_cb =Blueprint(
-    'public',
-    __name__,
+
+public_bp = Blueprint(
+    'public', 
+    __name__, 
     template_folder='../../templates/public'
 )
 
