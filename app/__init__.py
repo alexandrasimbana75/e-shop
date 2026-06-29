@@ -14,7 +14,9 @@ def create_app():
     migrate.init_app(app, db)
     #Modelos
     from app.models import Usuario
-
+    from app.models import Pedido,DetallePedido
+    from app.models import Producto
+    from app.models import Categoria
     # Blueprints
     from app.blueprints.public import public_bp
     from app.blueprints.auth import auth_bp
